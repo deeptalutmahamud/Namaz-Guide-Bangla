@@ -11,7 +11,7 @@ import SwiftUI
 struct Namaz_Guide_BanglaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBarView()
         }
     }
 }

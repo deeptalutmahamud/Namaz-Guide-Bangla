@@ -11,6 +11,12 @@
 		35704BA92C03BA9800165707 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35704BA82C03BA9800165707 /* ContentView.swift */; };
 		35704BAB2C03BA9A00165707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35704BAA2C03BA9A00165707 /* Assets.xcassets */; };
 		35704BAE2C03BA9A00165707 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35704BAD2C03BA9A00165707 /* Preview Assets.xcassets */; };
+		35704BBB2C03BC6500165707 /* PrayerTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35704BBA2C03BC6500165707 /* PrayerTime.swift */; };
+		35704BBD2C03BC8900165707 /* ApiSevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35704BBC2C03BC8900165707 /* ApiSevices.swift */; };
+		35704BBF2C03BCF800165707 /* PrayerTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35704BBE2C03BCF800165707 /* PrayerTimeModel.swift */; };
+		35704BC12C03CDFA00165707 /* Tajbhi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35704BC02C03CDFA00165707 /* Tajbhi.swift */; };
+		35704BC32C03E10F00165707 /* compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35704BC22C03E10F00165707 /* compass.swift */; };
+		35704BC52C03E27700165707 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35704BC42C03E27700165707 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		35704BA82C03BA9800165707 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35704BAA2C03BA9A00165707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35704BAD2C03BA9A00165707 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35704BBA2C03BC6500165707 /* PrayerTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTime.swift; sourceTree = "<group>"; };
+		35704BBC2C03BC8900165707 /* ApiSevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSevices.swift; sourceTree = "<group>"; };
+		35704BBE2C03BCF800165707 /* PrayerTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeModel.swift; sourceTree = "<group>"; };
+		35704BC02C03CDFA00165707 /* Tajbhi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tajbhi.swift; sourceTree = "<group>"; };
+		35704BC22C03E10F00165707 /* compass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = compass.swift; sourceTree = "<group>"; };
+		35704BC42C03E27700165707 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		35704BA52C03BA9800165707 /* Namaz Guide Bangla */ = {
 			isa = PBXGroup;
 			children = (
+				35704BB72C03BAC200165707 /* Model */,
+				35704BB62C03BAB600165707 /* ViewModel */,
+				35704BB52C03BAAD00165707 /* View */,
+				35704BB42C03BAA300165707 /* Service */,
 				35704BA62C03BA9800165707 /* Namaz_Guide_BanglaApp.swift */,
-				35704BA82C03BA9800165707 /* ContentView.swift */,
 				35704BAA2C03BA9A00165707 /* Assets.xcassets */,
 				35704BAC2C03BA9A00165707 /* Preview Content */,
 			);
@@ -65,6 +80,41 @@
 				35704BAD2C03BA9A00165707 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35704BB42C03BAA300165707 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		35704BB52C03BAAD00165707 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35704BA82C03BA9800165707 /* ContentView.swift */,
+				35704BC02C03CDFA00165707 /* Tajbhi.swift */,
+				35704BC22C03E10F00165707 /* compass.swift */,
+				35704BC42C03E27700165707 /* TabBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35704BB62C03BAB600165707 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				35704BBA2C03BC6500165707 /* PrayerTime.swift */,
+				35704BBC2C03BC8900165707 /* ApiSevices.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		35704BB72C03BAC200165707 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35704BBE2C03BCF800165707 /* PrayerTimeModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +188,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				35704BA92C03BA9800165707 /* ContentView.swift in Sources */,
+				35704BBF2C03BCF800165707 /* PrayerTimeModel.swift in Sources */,
+				35704BC52C03E27700165707 /* TabBarView.swift in Sources */,
+				35704BBB2C03BC6500165707 /* PrayerTime.swift in Sources */,
+				35704BC32C03E10F00165707 /* compass.swift in Sources */,
+				35704BC12C03CDFA00165707 /* Tajbhi.swift in Sources */,
 				35704BA72C03BA9800165707 /* Namaz_Guide_BanglaApp.swift in Sources */,
+				35704BBD2C03BC8900165707 /* ApiSevices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +331,8 @@
 				DEVELOPMENT_TEAM = 2YR76576KZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide accurate Namaz times";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide accurate Namaz times";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +362,8 @@
 				DEVELOPMENT_TEAM = 2YR76576KZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide accurate Namaz times";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide accurate Namaz times";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
